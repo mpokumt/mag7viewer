@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + Python
+# MAG7 Interactive Return Viewer (React + TypeScript + Vite + Python)
 
 A simple full-stack app to visualize daily returns of the MAG7 stocks (MSFT, AAPL, GOOGL, AMZN, NVDA, META, TSLA) using data from yfinance
 
