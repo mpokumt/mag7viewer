@@ -1,0 +1,1 @@
+export type Ticker = "AAPL" | "MSFT" | "GOOGL" | "AMZN" | "TSLA" | "META" | "NVDA";
