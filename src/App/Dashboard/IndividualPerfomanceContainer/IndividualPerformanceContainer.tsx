@@ -29,8 +29,6 @@ export const IndividualPerformanceContainer = () => {
 
     const tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA"];
 
-    console.log({ dateRange });
-
     const handleDateChange = (updatedRange: DateRange) => {
         const endDate = new Date(updatedRange.endDate);
         const startDate = new Date(updatedRange.startDate);
