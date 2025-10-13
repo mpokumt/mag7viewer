@@ -11,6 +11,8 @@ export interface DateRange {
 }
 
 export const Dashboard = () => {
+    const tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA"];
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4 md:p-6">
             <div className="max-w-7xl mx-auto space-y-6">
@@ -29,9 +31,9 @@ export const Dashboard = () => {
                     </div>
                 </motion.div>
 
-                <SummaryTable />
+                <SummaryTable tickers={tickers} />
 
-                <IndividualPerformanceContainer />
+                <IndividualPerformanceContainer tickers={tickers} />
 
                 <Footer />
             </div>

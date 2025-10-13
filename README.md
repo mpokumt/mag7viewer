@@ -2,6 +2,8 @@
 
 A simple full-stack app to visualize daily returns of the MAG7 stocks (MSFT, AAPL, GOOGL, AMZN, NVDA, META, TSLA) using data from yfinance
 
+Visit here:
+
 ## Prerequisites
 
 - Install nvm
@@ -17,7 +19,7 @@ npm install -g yarn
 yarn set version 4.7.0
 ```
 
-## Getting Started
+## Getting Started - Dev Setup
 
 ### Frontend - Make sure you're in the the root of the project before proceeding.
 

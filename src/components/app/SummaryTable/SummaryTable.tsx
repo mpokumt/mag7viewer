@@ -11,13 +11,15 @@ export interface SortConfig {
     direction: "ASC" | "DESC";
 }
 
-export const SummaryTable = () => {
+interface SummaryTableProps {
+    tickers: string[];
+}
+
+export const SummaryTable = ({ tickers }: SummaryTableProps) => {
     const [sortConfig, setSortConfig] = useState<SortConfig>({ key: null, direction: "ASC" });
 
-    const tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA"];
-
     const retrieveSummaryInfo = async () => {
-        const response = await fetch(`http://localhost:8000/summary`);
+        const response = await fetch(`/api/summary`);
 
         return response.json();
     };

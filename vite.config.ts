@@ -13,7 +13,11 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            "/api": "http://localhost:5000"
+            "/api": {
+                target: "https://mag7viewer.onrender.com",
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/api/, "")
+            }
         }
     }
 });

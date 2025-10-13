@@ -22,7 +22,7 @@ export const CardChart = ({ chartColor, chartData }: CardChartProps) => {
 
                     <YAxis hide={true} />
 
-                    <Tooltip content={<StockTooltip />} />
+                    <Tooltip content={<StockTooltip active={false} payload={[]} label={""} />} />
 
                     <Line
                         type="monotone"
