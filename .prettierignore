@@ -1,0 +1,6 @@
+.github/*
+.gitignore
+.yarn/*
+.next/*
+.vscode/*
+.node_modules/*
