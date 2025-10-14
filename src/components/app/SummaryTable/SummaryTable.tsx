@@ -19,7 +19,7 @@ export const SummaryTable = ({ tickers }: SummaryTableProps) => {
     const [sortConfig, setSortConfig] = useState<SortConfig>({ key: null, direction: "ASC" });
 
     const retrieveSummaryInfo = async () => {
-        const response = await fetch(`/api/summary`);
+        const response = await fetch(`https://mag7viewer.onrender.com/summary`);
 
         return response.json();
     };

@@ -38,7 +38,7 @@ export const IndividualPerformanceContainer = ({
 
     const retrieveIndividualPerformanceInfo = async () => {
         const response = await fetch(
-            `/api/returns?start=${dateRange.startDate}&end=${dateRange.endDate}`
+            `https://mag7viewer.onrender.com/returns?start=${dateRange.startDate}&end=${dateRange.endDate}`
         );
 
         return response.json();
