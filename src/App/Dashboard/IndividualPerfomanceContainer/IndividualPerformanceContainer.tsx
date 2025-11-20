@@ -38,7 +38,7 @@ export const IndividualPerformanceContainer = ({
 
     const retrieveIndividualPerformanceInfo = async () => {
         const response = await fetch(
-            `https://mag7viewer.onrender.com/returns?start=${dateRange.startDate}&end=${dateRange.endDate}`
+            `/api/returns?start=${dateRange.startDate}&end=${dateRange.endDate}`
         );
 
         return response.json();
@@ -68,7 +68,7 @@ export const IndividualPerformanceContainer = ({
     return (
         <>
             {isError ? (
-                <ErrorAlert />
+                <ErrorAlert summary={false} />
             ) : (
                 <div>
                     <motion.div
