@@ -19,7 +19,7 @@ export const SummaryTable = ({ tickers }: SummaryTableProps) => {
     const [sortConfig, setSortConfig] = useState<SortConfig>({ key: null, direction: "ASC" });
 
     const retrieveSummaryInfo = async () => {
-        const response = await fetch(`https://mag7viewer.onrender.com/summary`);
+        const response = await fetch(`/api/summary`);
 
         return response.json();
     };
@@ -92,7 +92,7 @@ export const SummaryTable = ({ tickers }: SummaryTableProps) => {
             {isLoading ? (
                 loadingContainer
             ) : isError ? (
-                <ErrorAlert />
+                <ErrorAlert summary={true} />
             ) : (
                 <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg px-[1.4rem]">
                     <CardHeader className="border-b border-gray-100 px-[0.5rem]">
